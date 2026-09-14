@@ -1,11 +1,172 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Coffee Corner Lomé — Café artisanal</title>
+<meta name="description" content="Coffee Corner, café artisanal au cœur de Lomé. Cafés de spécialité, pâtisseries maison et espace de travail convivial.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
 </head>
 <body>
-    
+
+<header class="site-header">
+  <div class="container header-inner">
+    <a href="#accueil" class="logo">☕ Coffee Corner</a>
+    <nav class="nav" id="nav">
+      <a href="#accueil">Accueil</a>
+      <a href="#menu">Menu</a>
+      <a href="#apropos">À propos</a>
+      <a href="#avis">Avis</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <button class="burger" id="burger" aria-label="Ouvrir le menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<section id="accueil" class="hero">
+  <div class="container hero-inner">
+    <p class="eyebrow">Lomé, Togo</p>
+    <h1>Un café de qualité,<br>un moment à savourer.</h1>
+    <p class="hero-text">Cafés de spécialité torréfiés avec soin, pâtisseries maison et un cadre chaleureux pour travailler, discuter ou simplement souffler.</p>
+    <div class="hero-actions">
+      <a href="#menu" class="btn btn-primary">Voir le menu</a>
+      <a href="#contact" class="btn btn-outline">Nous trouver</a>
+    </div>
+  </div>
+  <div class="hero-blob" aria-hidden="true"></div>
+</section>
+
+<section id="apropos" class="about">
+  <div class="container about-inner">
+    <div class="about-visual" aria-hidden="true">
+      <div class="cup-icon">☕</div>
+    </div>
+    <div class="about-text">
+      <p class="eyebrow">Notre histoire</p>
+      <h2>Le café comme on l'aime, préparé avec attention</h2>
+      <p>Coffee Corner est né d'une passion simple : partager du bon café à Lomé. Nos grains sont sélectionnés avec soin et nos recettes sont pensées pour révéler toute la richesse de chaque tasse.</p>
+      <p>Que vous veniez pour un espresso rapide entre deux rendez-vous ou pour poser votre ordinateur toute une après-midi, notre équipe est là pour vous accueillir avec le sourire.</p>
+      <ul class="about-points">
+        <li>Grains torréfiés localement</li>
+        <li>Pâtisseries préparées chaque matin</li>
+        <li>Wifi gratuit &amp; espace calme</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section id="menu" class="menu">
+  <div class="container">
+    <p class="eyebrow center">Notre carte</p>
+    <h2 class="center">Menu</h2>
+
+    <div class="menu-grid">
+      <article class="menu-card">
+        <div class="menu-icon">☕</div>
+        <h3>Espresso</h3>
+        <p>Court et intense, l'essentiel du café.</p>
+        <span class="price">1 000 FCFA</span>
+      </article>
+      <article class="menu-card">
+        <div class="menu-icon">🥛</div>
+        <h3>Cappuccino</h3>
+        <p>Espresso, lait chaud et mousse onctueuse.</p>
+        <span class="price">1 500 FCFA</span>
+      </article>
+      <article class="menu-card">
+        <div class="menu-icon">🧊</div>
+        <h3>Café glacé</h3>
+        <p>Rafraîchissant, parfait pour les journées chaudes.</p>
+        <span class="price">1 800 FCFA</span>
+      </article>
+      <article class="menu-card">
+        <div class="menu-icon">🍫</div>
+        <h3>Chocolat chaud</h3>
+        <p>Onctueux et gourmand, avec chantilly sur demande.</p>
+        <span class="price">1 500 FCFA</span>
+      </article>
+      <article class="menu-card">
+        <div class="menu-icon">🥐</div>
+        <h3>Croissant</h3>
+        <p>Pur beurre, préparé chaque matin.</p>
+        <span class="price">800 FCFA</span>
+      </article>
+      <article class="menu-card">
+        <div class="menu-icon">🍰</div>
+        <h3>Part de gâteau</h3>
+        <p>Sélection du jour, faite maison.</p>
+        <span class="price">1 200 FCFA</span>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section id="avis" class="testimonials">
+  <div class="container">
+    <p class="eyebrow center">Ils en parlent</p>
+    <h2 class="center">Avis clients</h2>
+    <div class="testimonial-grid">
+      <blockquote class="testimonial">
+        <p>« Le meilleur cappuccino de Lomé, et une ambiance parfaite pour travailler. »</p>
+        <cite>— Ama K.</cite>
+      </blockquote>
+      <blockquote class="testimonial">
+        <p>« Accueil chaleureux, pâtisseries délicieuses. Mon café du matin préféré. »</p>
+        <cite>— Kodjo A.</cite>
+      </blockquote>
+      <blockquote class="testimonial">
+        <p>« Un vrai coin de calme en pleine ville. J'y retourne chaque semaine. »</p>
+        <cite>— Sena D.</cite>
+      </blockquote>
+    </div>
+  </div>
+</section>
+
+<section id="contact" class="contact">
+  <div class="container contact-inner">
+    <div class="contact-info">
+      <p class="eyebrow">Nous rendre visite</p>
+      <h2>Contact &amp; horaires</h2>
+      <p><strong>Adresse :</strong> Avenue de la Paix, Lomé, Togo</p>
+      <p><strong>Téléphone :</strong> +228 90 00 00 00</p>
+      <p><strong>Email :</strong> contact@coffeecorner-lome.com</p>
+      <div class="hours">
+        <p><span>Lundi – Vendredi</span><span>7h30 – 20h00</span></p>
+        <p><span>Samedi</span><span>8h00 – 20h00</span></p>
+        <p><span>Dimanche</span><span>9h00 – 18h00</span></p>
+      </div>
+    </div>
+    <form class="contact-form" id="contact-form">
+      <label>
+        Nom
+        <input type="text" name="name" required>
+      </label>
+      <label>
+        Email
+        <input type="email" name="email" required>
+      </label>
+      <label>
+        Message
+        <textarea name="message" rows="4" required></textarea>
+      </label>
+      <button type="submit" class="btn btn-primary">Envoyer</button>
+      <p class="form-note" id="form-note" hidden>Merci ! Votre message a bien été noté.</p>
+    </form>
+  </div>
+</section>
+
+<footer class="site-footer">
+  <div class="container footer-inner">
+    <p>☕ Coffee Corner — Lomé, Togo</p>
+    <p>&copy; <span id="year"></span> Coffee Corner. Tous droits réservés.</p>
+  </div>
+</footer>
+
+<script src="script.js"></script>
 </body>
 </html>
